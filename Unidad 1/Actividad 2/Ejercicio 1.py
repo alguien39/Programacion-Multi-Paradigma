@@ -1,5 +1,5 @@
 while(True):
-    Eleccion = input("Que area desea calcular? (Cuadrado, Triangulo) ")
+    Eleccion = input("Que area desea calcular? (Cuadrado, Triangulo, Ciruculo) ")
     if (Eleccion == "Cuadrado"):
         lado = float(input("Ingrese el lado del cuadrado: "))
         if (lado > 0):
@@ -15,6 +15,13 @@ while(True):
             print("El area del triangulo es: "+str(area))
         else:
             print("Los valores de base y altura deben ser mayores a 0")
+    elif (Eleccion == "Circulo"):
+        radio = float(input("Ingrese el radio del circulo: "))
+        if (radio > 0):
+            area = 3.1416 * (radio * radio)
+            print("El area del circulo es: "+str(area))
+        else:
+            print("El valor del radio debe ser mayor a 0")
     else:
         print("La opcion ingresada no es valida")
     continuar = input("Desea continuar? (Si/No) ")

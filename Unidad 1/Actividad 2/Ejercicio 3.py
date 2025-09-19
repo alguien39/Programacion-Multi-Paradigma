@@ -27,7 +27,6 @@ while (eleccion != 5 and eleccion > 0 and eleccion <= 5):
             print("El resultado de la division es: "+str(resultado))
         else:
             print("No se puede dividir entre 0")
-
     if eleccion == 5:
         print("Gracias por usar la calculadora")
         break
