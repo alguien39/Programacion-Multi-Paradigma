@@ -44,7 +44,7 @@ while (eleccion != 5 and eleccion > 0 and eleccion <= 5):
             y = int(input("Elegir Tarea A Eliminar:")) - 1
             x = input("Está seguro de que quiere ELIMINAR la tarea:" + lstTareas[y]["Nombre"] + "?\nSi/No\n")
             if(x != "No" and y < len(lstTareas) and y >= 0):
-                lstTareas[y].pop()
+                lstTareas.pop(y)
             z = input("Desea ELIMINAR otra tarea?\nSi/No\n")
     elif (eleccion == 5):
         break
