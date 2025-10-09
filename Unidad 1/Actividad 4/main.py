@@ -9,10 +9,8 @@ libro3.prestar()
 
 print("Libro 1: \n"+libro1.mostrar_estado())
 print("\nLibro 2: \n"+libro2.mostrar_estado())
-print("\nLibro 2: \n"+libro3.mostrar_estado())
+print("\nLibro 3: \n"+libro3.mostrar_estado())
 
 libro3.devolver()
 
 print("\n Libro Devuelto: "+libro3.mostrar_estado())
-
-
