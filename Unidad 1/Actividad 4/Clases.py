@@ -5,16 +5,17 @@ class Libro:
         self.publicacon = publicacon
         self.prestado = prestado
     bibliteca = "Biblbioteca Central"
-    def prestar():
+    def prestar(self):
         if self.prestado == False:
             self.prestado = True
             return "El libro ha sido prestado"
         else:
             return "El libro ya esta prestado"
-    def devolver():
+    def devolver(self):
         if self.prestado == True:
             self.prestado = False
             return "El libro ha sido devuelto"
         else:
             return "El libro no estaba prestado"
-    mostrar_estado = self.titulo + " de " + self.autor + " publicado en " + str(self.publicacon) + ".\nEstado: " + ("Prestado" if self.prestado else "Disponible")
+    def mostrar_estado(self):
+        return(str(self.titulo) + " de " + str(self.autor) + " publicado en " + str(self.publicacon) + ".\nEstado: " + ("Prestado" if self.prestado else "Disponible"))
