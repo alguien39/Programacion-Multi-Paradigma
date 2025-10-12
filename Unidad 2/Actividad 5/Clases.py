@@ -2,7 +2,11 @@ class producto:
 
     def __init__(self, nombre, precio):
         self.nombre = nombre
-        self._precio = precio
+        if precio >= 0:
+            self._precio = precio
+        else:
+            print("El precio no puede ser menor a 0")
+            self._precio = 0
         self.__stock = 0
 
     @property 
@@ -31,10 +35,7 @@ class producto:
         return f"Nombre: {self.nombre}, Precio: {self._precio}, Stock: {self.__stock}"
     
     def __eq__(self, otro):
-        if self.nombre == otro.nombre:
-            return True
-        else:
-            return False
+        return self.nombre == otro.nombre
     
 class Inventario:
     def __init__(self):
@@ -43,16 +44,6 @@ class Inventario:
     @property
     def productos(self):
         return self.__productos
-    
-    @productos.setter
-    def productos(self,productos):
-        listProductos = []
-        i = 0
-        while i < len(productos)-1:
-            nombre = productos.nombre
-            listProductos.Append((f'{nombre}', productos[i]))
-            i = i + 1
-        self.__productos = dict(listProductos)
 
     def agregar_producto(self, producto):
         if producto.nombre not in self.__productos:
