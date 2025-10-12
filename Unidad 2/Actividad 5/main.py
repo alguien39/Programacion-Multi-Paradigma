@@ -81,7 +81,7 @@ while respuesta != 6:
     elif respuesta == 3:
         buscar_Producto()
     elif respuesta == 4:
-        comparar_Productos(p1, p2)
+        comparar_Productos()
     elif respuesta == 5:
         print(f"El valor total del inventario es: {unInventario.total_valor_inventario()}")
     elif respuesta == 6:
