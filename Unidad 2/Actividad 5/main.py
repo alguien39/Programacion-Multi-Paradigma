@@ -16,8 +16,7 @@ lista_productos = [p1, p2, p3, p4]
 for prod in lista_productos:
     unInventario.agregar_producto(prod)
 
-#Metodos
-
+#Metodos del menu
 def Agregar_Producto():
     nombre = input("Ingrese el nombre del producto: ")
     precio = float(input("Ingrese el precio del producto: "))
@@ -43,8 +42,6 @@ def Modificar_Sock():
         nuevo_precio = float(input("Ingrese el nuevo precio: "))
         producto_seleccionado.precio = nuevo_precio
         print("Precio modificado exitosamente.")
-    
-print(unInventario.total_valor_inventario())
 
 def buscar_Producto():
     nombre = input("Ingrese el nombre del producto a buscar: ")
@@ -69,12 +66,13 @@ def comparar_Productos():
 
 #Programa principal
 respuesta = 0
-while respuesta != 5:
+while respuesta != 6:
     print("1. Agregar producto")
     print("2. Modificar stock o precio")
     print("3. Buscar producto")
     print("4. Comparar productos")
-    print("5. Salir")
+    print("5. Calcular valor total del inventario")
+    print("6. Salir")
     respuesta = int(input("Seleccione una opcion: "))
     if respuesta == 1:
         Agregar_Producto()
@@ -85,6 +83,8 @@ while respuesta != 5:
     elif respuesta == 4:
         comparar_Productos(p1, p2)
     elif respuesta == 5:
+        print(f"El valor total del inventario es: {unInventario.total_valor_inventario()}")
+    elif respuesta == 6:
         print("Saliendo del programa...")
     else:
         print("Opcion no valida, intente de nuevo.")
