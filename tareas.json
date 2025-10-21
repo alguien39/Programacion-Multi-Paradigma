@@ -1,0 +1,23 @@
+[
+    {
+        "tipo": "Tarea",
+        "titulo": "Actividad 5 U2",
+        "descripcion": "Desarrollo de un Gestor De Tareas",
+        "prioridad": 3,
+        "completada": true
+    },
+    {
+        "tipo": "Tarea_Urgente",
+        "titulo": "Dise\u00f1o de Diplomas SIMPOSIUM XXXII",
+        "descripcion": "Dise\u00f1ar y presentar diplomas a el profesor encargado.",
+        "prioridad": 5,
+        "completada": true
+    },
+    {
+        "tipo": "Tarea_Urgente",
+        "titulo": "Dise\u00f1o de Gafetes SIMPOSIUM XXXII",
+        "descripcion": "Dise\u00f1ar y presentar Gafetes a el profesor encargado.",
+        "prioridad": 5,
+        "completada": false
+    }
+]
