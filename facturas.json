@@ -1,0 +1,16 @@
+[
+  {
+    "codigoTiket": "8863786120",
+    "RFCReceptor": "BAMJ041020292",
+    "concepto": "Sin concepto",
+    "importeTotal": 100.0,
+    "formaPago": "Efectivo"
+  },
+  {
+    "codigoTiket": "1162811539",
+    "RFCReceptor": "RAS231SVA234S",
+    "concepto": "Gastos en general",
+    "importeTotal": 200.54,
+    "formaPago": "Tarjeta Debito"
+  }
+]
