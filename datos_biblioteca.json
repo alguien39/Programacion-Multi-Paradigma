@@ -35,6 +35,12 @@
             "autor": "Arthur Conan Doyle",
             "anio": "1887",
             "estado": "disponible"
+        },
+        {
+            "titulo": "El Senor de los anillos: La comunidad del anillo",
+            "autor": "J R R Tolkien",
+            "anio": "1950",
+            "estado": "disponible"
         }
     ],
     "usuarios": [
@@ -48,6 +54,10 @@
         },
         {
             "nombre": "Madrid Ovalle",
+            "libros_prestados": []
+        },
+        {
+            "nombre": "Niki Nicole",
             "libros_prestados": []
         }
     ]
