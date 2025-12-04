@@ -32,4 +32,16 @@ def al_cuadrado(x):
 
 def sumar(acc, x):
     return acc + x
-    
+
+
+pipeline = componer(
+    crear_filtro(es_positivo),
+    crear_transformador(al_cuadrado),
+    crear_reductor(sumar, 0)
+)
+
+numeros = [1, -2, 3, -4, 5]
+print(pipeline(numeros))
+
+numeros = [1, -2, 3, -4, 5, -6, 7, 8, -9, 10]
+print(pipeline(numeros))
