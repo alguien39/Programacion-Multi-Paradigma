@@ -1,1 +1,0 @@
-# Programacion-Multi-Paradigma
